@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+KR&display=swap');
+/* reset */
+* {
+  margin: 0; padding: 0;
+}
+body * { 
+  box-sizing: border-box;
+}
+li { 
+  list-style: none;
+}
+a {
+  text-decoration: none; color: #333;
+}
+.clear::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* 스크롤 제거 */
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 1px;
+}
+::-webkit-scrollbar-track {
+  background-color: #efefef;
+}
+/* 고정 폭 .inner */
+.inner {
+  position: relative;
+  width: 1180px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+body {
+  font-family: 'Noto Sans KR';
+  width: 100%;
+  height: 100%;
+}
+#menu {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  background-color: #333;
+  z-index: 1000;
+}
+#menu .main-menu {
+  position: relative;
+  width: 1180px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#menu .main-menu .main-menu-imgbox {
+  width: 30%;
+  height: 100px;
+  float: left;
+  position: relative;
+}
+#menu .main-menu .main-menu-imgbox img {
+  margin-top: 10px;
+  width: 70px;
+}
+#menu .main-menu .main-menu-imgbox h3 {
+  position: absolute;
+  top: 32px;
+  color: #fff;
+  font-size: 30px;
+  left: 80px;
+}
+#menu .main-menu ul {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  display: block;
+  color: #fff;
+  float: left;
+}
+#menu .main-menu ul li {
+  text-align: center;
+  float: left;
+  width: calc(100% / 4 * 1);
+  color: #fff;
+  line-height: 100px;
+  font-size: 20px;
+}
+#menu .main-menu ul li a {
+  color: #fff;
+}
+.navbtn i{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 40px;
+  cursor: pointer;
+  color: #fff;
+}
+
+@keyframes menutxt {
+  0% {
+    top: 0vw;
+  }
+  50% {
+    top: 1vw;
+  }
+  100% {
+    top: 0vw;
+  }
+}

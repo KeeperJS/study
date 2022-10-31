@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+KR&display=swap');
+/* reset */
+* {
+  margin: 0; padding: 0;
+}
+body * { 
+  box-sizing: border-box;
+}
+li { 
+  list-style: none;
+}
+a {
+  text-decoration: none; color: #333;
+}
+.clear::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* 스크롤 제거 */
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 1px;
+}
+::-webkit-scrollbar-track {
+  background-color: #efefef;
+}
+/* 고정 폭 .inner */
+.inner {
+  position: relative;
+  width: 1180px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+body {
+  font-family: 'Noto Sans KR';
+  width: 100%;
+  height: 100%;
+}
+#menu {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  background-color: #333;
+  z-index: 1000;
+}
+#menu .main-menu {
+  position: relative;
+  width: 1180px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#menu .main-menu .main-menu-imgbox {
+  width: 30%;
+  height: 100px;
+  float: left;
+  position: relative;
+}
+#menu .main-menu .main-menu-imgbox img {
+  margin-top: 10px;
+  width: 70px;
+}
+#menu .main-menu .main-menu-imgbox h3 {
+  position: absolute;
+  top: 32px;
+  color: #fff;
+  font-size: 30px;
+  left: 80px;
+}
+#menu .main-menu ul {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  display: block;
+  color: #fff;
+  float: left;
+}
+#menu .main-menu ul li {
+  text-align: center;
+  float: left;
+  width: calc(100% / 4 * 1);
+  color: #fff;
+  line-height: 100px;
+  font-size: 20px;
+}
+#menu .main-menu ul li a {
+  color: #fff;
+}
+.navbtn i{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 40px;
+  cursor: pointer;
+  color: #fff;
+}
+/* 
+main section page
+*/
+#section0 .bg img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1);
+}
+#section0 .bnbn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -2vw;
+  opacity: 1;
+  cursor: pointer;
+}
+#section0 .bnbn img {
+  width: 4vw;
+  transform: scale(1);
+}
+#section0 .hover-guide {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  opacity: 1;
+  animation: hover-guide 2s ease infinite;
+}
+#section0 .hover-guide img {
+  width: 15vw;
+}
+.bnbn-sweat {
+  height: 4vw;
+  position: absolute;
+  top: 29%;
+  left: 42%;
+  z-index: 10;
+  transform: scale(1) skew(30deg, -30deg);
+  display: none;
+}
+.bnbn-sweat div {
+  position: absolute;
+  background-image: url(../images/bnbn-sweat.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 3vw;
+  height: 1vw;
+  bottom: 0%;
+}
+.bnbn-sweat div:nth-child(1) {
+  animation: bnbnsweat 1.2s ease infinite;
+  animation-delay: 0s;
+}
+.bnbn-sweat div:nth-child(2) {
+  animation: bnbnsweat 1.2s ease infinite;
+  animation-delay: 0.25s;
+}
+.bnbn-sweat div:nth-child(3) {
+  animation: bnbnsweat 1.2s ease infinite;
+  animation-delay: 0.5s;
+}
+.bnbn-sweat div:nth-child(4) {
+  animation: bnbnsweat 1.2s ease infinite;
+  animation-delay: 0.75s;
+}
+.main-contents-text {
+  width: 100vw;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  font-size: 3vw;
+  line-height: 3.2vw;
+  display: none;
+  padding: 1vw;
+  background-color: rgba(104, 104, 104, 0.623);
+}
+.main-contents-text h3:nth-child(1) {
+  color: #fff;
+}
+.main-contents-text h3:nth-child(2) {
+  /* margin-top: -1.9vw; */
+  color: #333;
+  transform: rotate(180deg) scaleX(-1);
+}
+/* 
+  skill section page
+*/
+#section1 {
+  background-image: url(../images/section1-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#section1 .inner {
+  width: 1380px;
+  height: 90vh;
+  margin: 5vh auto;
+  background-color: rgba(224, 214, 197, 0.589);
+  padding: 0px 100px;
+}
+#section1 .progress {
+  width: 300px;
+  top: 0px;
+  position: absolute;
+  text-align: center;
+}
+#section1 .progress span {
+  font-size: 22px;
+  color: #fff;
+  text-shadow: 0px 0px 3px #444;
+}
+#section1 .progress .graphimg p {
+  position: absolute;
+  top: 76.5%;
+  right: 48%;
+  font-size: calc(10px + 80%);
+  color: beige;
+}
+#section1 .graphimg {
+  position: absolute;
+  top: 40px;
+}
+#section1 .progress img:nth-child(1){
+  width: 100%;
+}
+#section1 .progress img:nth-child(2){
+  width: 3.33%;
+  position: absolute;
+  top: 5.2%;
+  left: 48.6%;
+  transform: rotate(-130deg) scaleX(-1);
+  transition: 2s all;
+}
+#section1 .html5 {
+  top: 40%;
+}
+#section1 .css3 {
+  top: 40%;
+  left: 540px;
+}
+#section1 .jquery {
+  top: 40%;
+  right: 100px;
+}
+#section1 .photoshop {
+  top: 20%;
+  left: 370px;
+  width: 200px;
+}
+#section1 .php {
+  top: 20%;
+  right: 370px;
+  width: 200px;
+}
+#section1 .php, #section1 .photoshop {
+  font-size: 8px;
+}
+#section1 .titletxt {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  font-size: 30px;
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.507);
+  padding: 5px 20px;
+  text-shadow: 0px 0px 3px #444;
+}
+#section1 .whatido {
+  width: calc(100% - 200px);
+  background-color: #333;
+  position: absolute;
+  bottom: 30px;
+  padding: 10px 30px;
+  color: #fff;
+}
+#section1 .whatido h3 {
+  font-size: 25px;
+  margin: 10px 0px;
+}
+@keyframes hover-guide {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes bnbnmove {
+  0% {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  10% {
+    top: 45%;
+    left: 53%;
+  }
+  20% {
+    top: 52%;
+    left: 56%;
+  }
+  30% {
+    top: 47%;
+    left: 59%;
+  }
+  40% {
+    top: 54%;
+    left: 62%;
+  }
+  50% {
+    top: 49%;
+    left: 65%;
+  }
+  60% {
+    top: 56%;
+    left: 68%;
+  }
+  70% {
+    top: 51%;
+    left: 71%;
+    opacity: 1;
+  }
+  80% {
+    top: 58%;
+    left: 74%;
+  }
+  90% {
+    top: 53%;
+    left: 77%;
+  }
+  100% {
+    top: 60%;
+    left: 80%;
+    opacity: 0;
+  }
+}
+@keyframes bnbnsweat {
+  0% {
+    bottom: 0;
+    opacity: 1;
+  }
+  100% {
+    bottom: 3vw;
+    opacity: 0.2;
+  }
+}

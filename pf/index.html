@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keeper PF</title>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+  <!-- 원페이지 레이아웃 플러그인 -->
+  <link rel="stylesheet" href="./assets/jquery.fullPage.css">
+  <script src="./assets/jquery.fullPage.js"></script>
+  <script src="./js/fullpage.js" defer></script>
+  <!-- page js -->
+  <script src="./js/mainpage.js" defer></script>
+  <!-- progress -->
+  <script src="./js/progressbar.js" defer></script>
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/e56be71cec.js" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/layout.min.css">
+</head>
+
+<body>
+  <!-- 메뉴 -->
+  <div id="menu">
+    <div class="navbtn"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
+    <div class="main-menu">
+      <div class="main-menu-imgbox">
+        <img src="./images/users-1.svg" alt="">
+        <h3>Welcome</h3>
+      </div>
+      <ul>
+        <li><a href="#mainPage">HOME</a></li>
+        <li><a href="#skill" onclick="pset()">SKILL</a></li>
+        <li><a href="#aboutMe">ABOUT ME</a></li>
+        <li><a href="#portFolio">PORTFOLIO</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- 원페이지 레이아웃 -->
+  <div id="layout">
+    <div class="section" id="section0" data-anchor="mainPage">
+      <div class="bg">
+        <img src="./images/1666247879622.jpg" alt="">
+      </div>
+      <div class="bnbn">
+        <img src="./images/bnbn.png" alt="">
+      </div>
+      <div class="hover-guide">
+        <img src="./images/main-hoverguide.png" alt="">
+      </div>
+      <div class="bnbn-sweat">
+        <div class="sweat"></div>
+        <div class="sweat2"></div>
+        <div class="sweat3"></div>
+        <div class="sweat4"></div>
+      </div>
+      <div class="main-contents-text">
+        <h3>WELCOME TO KEEPER DESIGN PROFILE</h3>
+        <h3>WELCOME TO KEEPER DESIGN PROFILE</h3>
+      </div>
+    </div>
+    <div class="section" id="section1" data-anchor="skill">
+      <div class="inner">
+        <h3 class="titletxt">MY SKILL..</h3>
+        <div class="whatido">
+          <h3>What I Do</h3>
+          <p>Javascript와 jQuery 라이브러리를 통한 동적인 페이지 구현이 가능합니다.
+          <br>또한, php와 리액트를 사용하여 간단한 프론트 작업또한 가능합니다.</p>
+        </div>
+        <div class="progress html5">
+          <div class="graphimg">
+            <img src="./images/skill-backpanner-html5.png" alt="">
+            <img src="./images/skill-hand-html5.png" alt="">
+            <p></p>
+          </div>
+          <span>HTML5</span>
+        </div>
+        <div class="progress css3">
+          <div class="graphimg">
+            <img src="./images/skill-backpanner-css3.png" alt="">
+            <img src="./images/skill-hand-css3.png" alt="">
+            <p></p>
+          </div>
+          <span>CSS3</span>
+        </div>
+        <div class="progress jquery">
+          <div class="graphimg">
+            <img src="./images/skill-backpanner-jquery.png" alt="">
+            <img src="./images/skill-handle.png" alt="">
+            <p></p>
+          </div>
+          <span>jQuery</span>
+        </div>
+        <div class="progress php">
+          <div class="graphimg">
+            <img src="./images/skill-backpanner-php.png" alt="">
+            <img src="./images/skill-hand-php.png" alt="">
+            <p></p>
+          </div>
+          <span>PHP</span>
+        </div>
+        <div class="progress photoshop">
+          <div class="graphimg">
+            <img src="./images/skill-backpanner-photoshop.png" alt="">
+            <img src="./images/skill-hand-photoshop.png" alt="">
+            <p></p>
+          </div>
+          <span>PhotoShop</span>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="section2" data-anchor="aboutMe"></div>
+    <div class="section" id="section3" data-anchor="portFolio"></div>
+  </div>
+</body>
+
+</html>
